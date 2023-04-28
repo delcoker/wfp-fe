@@ -9,7 +9,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Box from "@mui/material/Box";
 import MenuItem from "@mui/material/MenuItem";
 import {Status} from "../../../domain/enums/Status";
-import AlertDataRepository from "../../../domain/repositories/AlertDataRepository";
 import {useNavigate} from "react-router-dom";
 import {Grid} from "@mui/material";
 import AlertDataRepositoryImpl from "../../../infrastructure/repositories/AlertDataRepositoryImpl";

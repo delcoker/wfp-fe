@@ -79,7 +79,7 @@ export default class EmployeeRepositoryImpl implements EmployeeRepository {
 
     updateAdmin(): Manager {
         return {
-            countryId: 0,
+            countryId: 434,
             id: 1,
             email: 'delcoker+admin@gmail.com',
             userType: "ADMIN"
@@ -89,7 +89,7 @@ export default class EmployeeRepositoryImpl implements EmployeeRepository {
     updateManager(employeeDetails: Manager): Manager {
         return {
             id: 1,
-            countryId: 0,
+            countryId: 5,
             email: 'delcoker+admin@gmail.com',
             userType: "ADMIN"
         };

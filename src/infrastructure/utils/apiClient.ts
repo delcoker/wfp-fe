@@ -8,7 +8,6 @@ const server_endpoint = process.env.NODE_ENV === "development" ?
 
 console.log(server_endpoint)
 console.log(process.env.NODE_ENV)
-// console.log(process.env)
 
 // Create the apiClient object with the headers
 export const createApiClient = () => {

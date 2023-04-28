@@ -89,7 +89,7 @@ const LoginPage = () => {
                 <div className={classes.form_card__content}>
                     <div className={classes.form_card__text}>
                         <h3>Welcome Back </h3>
-                        <p>Enter your credentials to access your account</p>
+                        <p>PASSWORD IS 123</p>
                     </div>
 
                     <form className={classes.form_card__form} onSubmit={handleSubmit}>

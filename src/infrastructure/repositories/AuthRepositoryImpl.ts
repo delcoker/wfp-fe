@@ -12,7 +12,6 @@ class AuthRepositoryImpl implements AuthRepository {
             localStorage.setItem('token', token);
             localStorage.setItem('email', payload.email)
         }
-        console.log(token)
         return token;
     }
 

@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {BrowserRouter as Router, Navigate, Outlet, Route, Routes} from 'react-router-dom'
 import LoginPage from './application/pages/login/LoginPage'
-import CartProvider from './application/contexts/store/CartProvider'
 import './App.css'
 import Error from "./application/pages/error/Error";
 import UserContext from './application/contexts/UserContext'
@@ -44,7 +43,6 @@ function App() {
     );
 
     function PrivateRoute({isAuthenticated, redirectPath, outlet}: PrivateRouteProps) {
-        console.log(isAuthenticated)
         if (isAuthenticated) {
             return outlet;
         } else {

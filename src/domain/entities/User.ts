@@ -1,5 +1,3 @@
-import UserRole from "./UserRole";
-
 interface User {
     id?: number,
     email?: string,

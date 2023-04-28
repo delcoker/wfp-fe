@@ -15,10 +15,6 @@ const Logout = () => {
         })
         .catch((error: any) => {
             console.log(error)
-            if (!error.response) alert("API might be down!");
-            if (error.response.data.statusCode === 401) navigate("/");
-            const message = error.response.data.detailedMessage;
-            alert(message);
         });
 
     return (
