@@ -81,7 +81,6 @@ export default function EmployeeDataTable() {
     }
 
     const rowClickHandler = (gridData: any) => {
-        console.log(gridData)
         setEditData(gridData.row);
     }
 

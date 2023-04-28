@@ -4,7 +4,7 @@ import AuthRepository from "../../domain/repositories/AuthRepository";
 
 class AuthRepositoryImpl implements AuthRepository {
     async login(payload: { email: string; password: string }):  Promise<null | string> {
-        const token = payload.email === 'only@employee.com' ? '123' : null;
+        const token = (payload.email === 'only@employee.com') || (payload.email === 'only@employee2.com') ? '123' : null;
         if (token) {
             updateApiClientHeaders({
                 Authorization: `Bearer ${token}`,

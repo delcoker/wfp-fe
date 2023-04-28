@@ -107,7 +107,6 @@ const LoginPage = () => {
                             <div className={classes.form_card__input_icon}>
                                 <FaEnvelope style={{color: 'rgb(38 127 255)'}}/>
                             </div>
-                            {/*change input type to text box and use style css*/}
                             <input type="text"
                                    value={email}
                                    placeholder='delcoker@live.ca'

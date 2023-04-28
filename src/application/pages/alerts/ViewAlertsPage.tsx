@@ -1,20 +1,15 @@
 import React, {useEffect, useState} from "react";
 import {GridColDef} from "@mui/x-data-grid";
 import {useNavigate} from "react-router-dom";
-import CurrencyFormatterService from "../../../domain/services/CurrencyFormatterService";
 import {CustomMuiToolbar} from "../../components/toolbar/CustomMuiToobar";
 import {StripedDataGrid} from "../../components/reusable/StripedDataGrid";
-import DateFormatterService from "../../../domain/services/DateFormatterService";
 import {Paper} from "@mui/material";
 import AlertDataRepositoryImpl from "../../../infrastructure/repositories/AlertDataRepositoryImpl";
 
 const Items = () => {
     const navigate = useNavigate();
-    const currencyFormatterService = new CurrencyFormatterService();
-    const dateFormatterService = new DateFormatterService();
     const alertDataRepository = new AlertDataRepositoryImpl();
 
-    // const [itemAddDialogOpen, setItemAddDialogOpen] = React.useState(false);
     const [itemEditDialogOpen, setItemEditDialogOpen] = React.useState(false);
     const [allItems, setAllItems] = useState<any>([]);
     const [pageSize, setPageSize] = React.useState(100);
@@ -93,9 +88,6 @@ const Items = () => {
                         id: false
                     },
                 },
-                // sorting: {
-                //     sortModel: [{field: 'name', sort: 'asc'}],
-                // },
             }}
             density="compact"
         />
