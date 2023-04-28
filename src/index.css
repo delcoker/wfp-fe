@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'LocalFont';
+    src: url('../public/fonts/NotoSans-Light.ttf') format('truetype');
+    font-family: 'LocalBoldFont';
+    src: url('../public/fonts/NotoSans-Bold.ttf') format('truetype');
+}
+
+/*remove this css, can remove this with material, have to style css for bill and cart */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f5ff;
+    font-family: 'LocalFont', sans-serif;
+}
+
+/*.css-bzb7cr{*/
+/*    height: auto !important;*/
+/*}*/

@@ -1,0 +1,1 @@
+export type changeCalculatorType = (amount: number) => void
